@@ -12,6 +12,7 @@ logs/
 28225305_Laporan.pdf
 *.docx
 *.doc
+prd.md
 
 # Scripts
 generate_report.py
