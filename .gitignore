@@ -1,8 +1,23 @@
+# Virtual environment
 .venv/
+
+# Raw documents (personal/private data)
 data/raw/
-outputs/
-!README.md
-*.md
+data/processed/
+
+# Logs
+logs/
+
+# Report drafts
+28225305_Laporan.pdf
 *.docx
 *.doc
+
+# Scripts
 generate_report.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
