@@ -1,0 +1,60 @@
+{
+  "doc_1_mbca.png": {
+    "merchant": "Indomaret",
+    "date": "08/04/2026",
+    "total": "Rp.37.200",
+    "expected_type": "BANK_NOTIF",
+    "expected_duplicate": false
+  },
+  "doc_2_tokped.pdf": {
+    "merchant": [
+      "Tokopedia",
+      "Qiek Store"
+    ],
+    "date": "07/03/2026",
+    "total": "Rp.183.960",
+    "expected_type": "ECOMMERCE",
+    "expected_duplicate": false
+  },
+  "doc_3_email.png": {
+    "merchant": "ESB RESTAURANT TECHNOLOGY",
+    "date": "06/04/2026",
+    "total": "Rp.60.000",
+    "expected_type": "BANK_NOTIF",
+    "expected_duplicate": false
+  },
+  "doc_4_indomaret.jpg": {
+    "merchant": "Indomaret",
+    "date": "08/04/2026",
+    "total": "Rp.37.200",
+    "expected_type": "PHYSICAL_RECEIPT",
+    "expected_duplicate": true
+  },
+  "doc_5_indomaret.jpeg": {
+    "merchant": "Indomaret",
+    "date": "06/04/2026",
+    "total": "Rp.82.600",
+    "expected_type": "PHYSICAL_RECEIPT",
+    "expected_duplicate": false
+  },
+  "doc_6_gacoan.jpeg": {
+    "merchant": [
+      "Mie Gacoan",
+      "ShopeeFood"
+    ],
+    "date": "10/04/2026",
+    "total": "Rp.45.500",
+    "expected_type": "PHYSICAL_RECEIPT",
+    "expected_duplicate": false
+  },
+  "doc_7_shopee.pdf": {
+    "merchant": [
+      "Shopee",
+      "Huawei Official Store"
+    ],
+    "date": "05/11/2025",
+    "total": "Rp.335.550",
+    "expected_type": "ECOMMERCE",
+    "expected_duplicate": false
+  }
+}

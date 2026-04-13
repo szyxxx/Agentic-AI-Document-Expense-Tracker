@@ -1,0 +1,22 @@
+document,field,ground_truth,baseline_pred,baseline_exact,baseline_normalized,agentic_pred,agentic_exact,agentic_normalized
+doc_1_mbca.png,merchant,Indomaret,IDM INDOMARET,False,True,INDOMARET,True,True
+doc_1_mbca.png,date,08/04/2026,08 Apr 2026,False,True,08/04/2026,True,True
+doc_1_mbca.png,total,Rp.37.200,"IDR 37,200.00",False,False,Rp.37.200,True,True
+doc_2_tokped.pdf,merchant,Tokopedia | Qiek Store,pedia e,False,False,Tokopedia,True,True
+doc_2_tokped.pdf,date,07/03/2026,07 Maret 2026,False,True,07/03/2026,True,True
+doc_2_tokped.pdf,total,Rp.183.960,Rp183.960,False,True,Rp.183.960,True,True
+doc_3_email.png,merchant,ESB RESTAURANT TECHNOLOGY,ESB RESTAURANT TECHNOLOGY,True,True,ESB RESTAURANT TECHNOLOGY,True,True
+doc_3_email.png,date,06/04/2026,06 Apr 2026,False,True,10/04/2026,False,False
+doc_3_email.png,total,Rp.60.000,"IDR 60,000.00",False,False,Rp.60.000,True,True
+doc_4_indomaret.jpg,merchant,Indomaret,"DJURNOA 164-166, LEBAKGEDE",False,False,Indomaret,True,True
+doc_4_indomaret.jpg,date,08/04/2026,,,,,,
+doc_4_indomaret.jpg,total,Rp.37.200,,,,Rp.21.000,False,False
+doc_5_indomaret.jpeg,merchant,Indomaret,evar |,False,False,Indomaret,True,True
+doc_5_indomaret.jpeg,date,06/04/2026,,,,,,
+doc_5_indomaret.jpeg,total,Rp.82.600,"82,600",False,True,Rp.82.600,True,True
+doc_6_gacoan.jpeg,merchant,Mie Gacoan | ShopeeFood,\ pay i,False,False,ShopeeFood,True,True
+doc_6_gacoan.jpeg,date,10/04/2026,,,,05/04/2023,False,False
+doc_6_gacoan.jpeg,total,Rp.45.500,,,,Rp.500,False,False
+doc_7_shopee.pdf,merchant,Shopee | Huawei Official Store,Alamat Pembeli:,False,False,Huawei Official Store,True,True
+doc_7_shopee.pdf,date,05/11/2025,05/11/25,False,True,05/11/2025,True,True
+doc_7_shopee.pdf,total,Rp.335.550,Rp335.550,False,True,Rp.335.550,True,True

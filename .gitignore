@@ -1,0 +1,8 @@
+.venv/
+data/raw/
+outputs/
+!README.md
+*.md
+*.docx
+*.doc
+generate_report.py

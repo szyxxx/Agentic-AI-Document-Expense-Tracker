@@ -1,0 +1,15 @@
+{
+  "document": "doc_2_tokped.pdf",
+  "ocr_words": 182,
+  "avg_confidence": 92.24,
+  "document_type": "ecommerce_invoice",
+  "inference_time_s": 68.58,
+  "baseline_merchant": "pedia e",
+  "baseline_date": "07 Maret 2026",
+  "baseline_total": "Rp183.960",
+  "agentic_merchant": "Tokopedia",
+  "agentic_date": "07/03/2026",
+  "agentic_total": "Rp.183.960",
+  "expected_type": "ECOMMERCE",
+  "expected_duplicate": false
+}

@@ -1,0 +1,15 @@
+{
+  "document": "doc_3_email.png",
+  "ocr_words": 147,
+  "avg_confidence": 79.89,
+  "document_type": "bank_notification",
+  "inference_time_s": 68.24,
+  "baseline_merchant": "ESB RESTAURANT TECHNOLOGY",
+  "baseline_date": "06 Apr 2026",
+  "baseline_total": "IDR 60,000.00",
+  "agentic_merchant": "ESB RESTAURANT TECHNOLOGY",
+  "agentic_date": "10/04/2026",
+  "agentic_total": "Rp.60.000",
+  "expected_type": "BANK_NOTIF",
+  "expected_duplicate": false
+}

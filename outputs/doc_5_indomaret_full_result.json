@@ -1,0 +1,15 @@
+{
+  "document": "doc_5_indomaret.jpeg",
+  "ocr_words": 129,
+  "avg_confidence": 53.6,
+  "document_type": "receipt",
+  "inference_time_s": 96.28,
+  "baseline_merchant": "evar |",
+  "baseline_date": null,
+  "baseline_total": "82,600",
+  "agentic_merchant": "Indomaret",
+  "agentic_date": null,
+  "agentic_total": "Rp.82.600",
+  "expected_type": "PHYSICAL_RECEIPT",
+  "expected_duplicate": false
+}

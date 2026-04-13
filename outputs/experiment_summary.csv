@@ -1,0 +1,8 @@
+document,ocr_words,avg_confidence,document_type,inference_time_s,baseline_merchant,baseline_date,baseline_total,agentic_merchant,agentic_date,agentic_total,expected_type,expected_duplicate
+doc_1_mbca.png,90,90.98,bank_notification,48.16,IDM INDOMARET,08 Apr 2026,"IDR 37,200.00",INDOMARET,08/04/2026,Rp.37.200,BANK_NOTIF,False
+doc_2_tokped.pdf,182,92.24,ecommerce_invoice,68.58,pedia e,07 Maret 2026,Rp183.960,Tokopedia,07/03/2026,Rp.183.960,ECOMMERCE,False
+doc_3_email.png,147,79.89,bank_notification,68.24,ESB RESTAURANT TECHNOLOGY,06 Apr 2026,"IDR 60,000.00",ESB RESTAURANT TECHNOLOGY,10/04/2026,Rp.60.000,BANK_NOTIF,False
+doc_4_indomaret.jpg,67,41.21,receipt,95.51,"DJURNOA 164-166, LEBAKGEDE",,,Indomaret,,Rp.21.000,PHYSICAL_RECEIPT,True
+doc_5_indomaret.jpeg,129,53.6,receipt,96.28,evar |,,"82,600",Indomaret,,Rp.82.600,PHYSICAL_RECEIPT,False
+doc_6_gacoan.jpeg,133,34.72,receipt,115.77,\ pay i,,,ShopeeFood,05/04/2023,Rp.500,PHYSICAL_RECEIPT,False
+doc_7_shopee.pdf,175,91.53,ecommerce_invoice,69.1,Alamat Pembeli:,05/11/25,Rp335.550,Huawei Official Store,05/11/2025,Rp.335.550,ECOMMERCE,False

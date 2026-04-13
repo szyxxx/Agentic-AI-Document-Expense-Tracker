@@ -1,0 +1,15 @@
+{
+  "document": "doc_1_mbca.png",
+  "ocr_words": 90,
+  "avg_confidence": 90.98,
+  "document_type": "bank_notification",
+  "inference_time_s": 48.16,
+  "baseline_merchant": "IDM INDOMARET",
+  "baseline_date": "08 Apr 2026",
+  "baseline_total": "IDR 37,200.00",
+  "agentic_merchant": "INDOMARET",
+  "agentic_date": "08/04/2026",
+  "agentic_total": "Rp.37.200",
+  "expected_type": "BANK_NOTIF",
+  "expected_duplicate": false
+}

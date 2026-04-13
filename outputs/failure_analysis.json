@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "stage": "OCR",
+    "error_type": "Severe Character Misrecognition",
+    "document": "doc_6_gacoan.jpeg",
+    "evidence": "Avg confidence 34.72 (SULIT). Aggressive binarize: conf turun ke 33.65. Baseline merchant: '\\ pay i' (seharusnya ShopeeFood/Mie Gacoan). Baseline total: None (tidak terdeteksi sama sekali).",
+    "impact": "Semua field gagal terekstrak. Baseline 0% accuracy, agentic 33% (hanya merchant).",
+    "root_cause": "Foto struk dengan pencahayaan buruk, font thermal printer kecil, background noise tinggi. Standard preprocessing justru menurunkan confidence (40.93->34.72).",
+    "solution": "Adaptive preprocessing berdasarkan confidence score. Jika no_preprocessing > standard, gunakan raw image. Tambahkan OCR engine alternatif (EasyOCR) sebagai fallback."
+  },
+  {
+    "id": 2,
+    "stage": "OCR",
+    "error_type": "Total OCR Failure on Binarization",
+    "document": "doc_4_indomaret.jpg",
+    "evidence": "Aggressive binarize: 0 words, 0.00 confidence (total blank). Standard: 67 words, conf 41.21. Agentic total: Rp.21.000 (GT: Rp.37.200). Date: None.",
+    "impact": "Aggressive preprocessing menghancurkan semua teks. Baseline 0% accuracy (merchant: 'DJURNOA 164-166, LEBAKGEDE'). Agentic 50% (hanya merchant correct).",
+    "root_cause": "Threshold binarization (180) terlalu tinggi untuk foto struk dengan kontras rendah. Seluruh content dianggap background dan dihapus.",
+    "solution": "Dynamic thresholding (Otsu's method). Jangan gunakan aggressive binarize jika avg_conf dokumen < 50."
+  },
+  {
+    "id": 3,
+    "stage": "Reading Order",
+    "error_type": "Line Prefix Pollution in Baseline",
+    "document": "doc_7_shopee.pdf",
+    "evidence": "Baseline merchant: '[p1-l3] Alamat Pembeli:' -- line prefix [p1-lN] tidak di-strip sebelum regex matching, dan heuristik salah mengambil baris ke-3 sebagai merchant.",
+    "impact": "Baseline merchant 100% salah untuk semua dokumen yang menggunakan format ordered_text dengan prefix. Exact match 0% meskipun date dan total bisa correct via normalization.",
+    "root_cause": "ordered_text menggunakan format '[p1-l3] text' tapi extract_document_fields tidak membersihkan prefix ini sebelum regex matching.",
+    "solution": "Strip [p1-lN] prefix di awal extract_document_fields. Perbaiki merchant heuristic agar skip baris dengan keyword 'Alamat', 'Pembeli'."
+  },
+  {
+    "id": 4,
+    "stage": "LLM Reasoning",
+    "error_type": "Date Hallucination",
+    "document": "doc_3_email.png",
+    "evidence": "Agentic date: 10/04/2026 (GT: 06/04/2026). LLM mengambil tanggal yang salah dari konteks OCR, mungkin dari bagian lain dokumen atau fabrication.",
+    "impact": "Expense tracker mencatat tanggal transaksi yang salah. Agentic normalized accuracy turun ke 66.67% (2/3 correct).",
+    "root_cause": "OCR avg_conf 79.89 cukup baik, tapi dokumen notifikasi bank memiliki multiple tanggal (tanggal transaksi vs tanggal notifikasi). LLM tidak dapat membedakan mana yang merupakan tanggal transaksi sebenarnya.",
+    "solution": "Tambahkan constraint di prompt: 'Pilih tanggal transaksi, bukan tanggal kirim email/notifikasi'. Gunakan few-shot examples untuk notifikasi bank."
+  },
+  {
+    "id": 5,
+    "stage": "LLM Reasoning",
+    "error_type": "Complete Value Fabrication",
+    "document": "doc_6_gacoan.jpeg",
+    "evidence": "Agentic: date=05/04/2023 (GT: 10/04/2026), total=Rp.500 (GT: Rp.45.500). Tanggal tahun 2023 padahal dokumen tahun 2026. Total Rp.500 vs Rp.45.500 -- LLM mengambil fragment angka dari OCR noise. Inference time: 116.09s (tertinggi).",
+    "impact": "3/3 field salah atau sangat jauh dari ground truth. Agentic accuracy 33%. Data palsu berbahaya untuk budgeting.",
+    "root_cause": "OCR confidence sangat rendah (34.72), teks OCR sangat noisy sehingga LLM tidak memiliki informasi valid untuk diekstrak. LLM tetap menghasilkan output plausible (hallucination) daripada mengembalikan null.",
+    "solution": "Tambahkan confidence gate: jika avg OCR confidence < 40, skip agentic extraction dan tandai sebagai 'LOW_QUALITY_SCAN'. Instruction prompt: 'Return null if unsure, do NOT guess values'."
+  }
+]

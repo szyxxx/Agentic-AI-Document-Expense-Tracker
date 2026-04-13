@@ -1,0 +1,15 @@
+{
+  "document": "doc_7_shopee.pdf",
+  "ocr_words": 175,
+  "avg_confidence": 91.53,
+  "document_type": "ecommerce_invoice",
+  "inference_time_s": 69.1,
+  "baseline_merchant": "Alamat Pembeli:",
+  "baseline_date": "05/11/25",
+  "baseline_total": "Rp335.550",
+  "agentic_merchant": "Huawei Official Store",
+  "agentic_date": "05/11/2025",
+  "agentic_total": "Rp.335.550",
+  "expected_type": "ECOMMERCE",
+  "expected_duplicate": false
+}

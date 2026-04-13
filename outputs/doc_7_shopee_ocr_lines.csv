@@ -1,0 +1,35 @@
+page,line_id,text,avg_conf,n_words,line_type
+1,1,Nota Pesanan,91.5,2,short_text
+1,2,Nama Pembeli: axeldavid21 Nama Penjual: Huawei Official Store,92.875,8,key_value_line
+1,3,Alamat Pembeli:,91.5,2,key_value_line
+1,4,"Inn Villas Jambu, Jalan Jambu Gang Jambu No. 3, Pejaten Barat 2, Pejaten Barat (Jalan",93.46666666666667,15,dense_table_like
+1,5,"Jambu No.3B), KOTA JAKARTA SELATAN, PASAR MINGGU, DK! JAKARTA, ID, 12510",90.54545454545455,11,dense_table_like
+1,6,No. Handphone Pembeli: 6285176860621,94.25,4,key_value_line
+1,7,No. Pesanan Tanggal Transaksi Metode Pembayaran Jasa Kirim,87.75,8,short_text
+1,8,251105VC23DRXW 05/11/25 Saldo ShopeePay Same Day,93.0,6,dense_table_like
+1,9,Rincian Pesanan,90.5,2,short_text
+1,10,No. Produk Variasi Harga Produk Kuantitas Subtotal,84.28571428571429,7,amount_like
+1,11,[SHOPEE EXCLUSIVE | BARU] HUAWEI FreeBu,93.5,6,short_text
+1,12,1 ds SE 4 ANC TWS | Up to 50dB | 10mm Dyna Black Rp369.000 1 Rp369.000,93.05882352941177,17,amount_like
+1,13,mic Driver | 50H Long Battery Life | IP54,93.77777777777777,9,short_text
+1,14,Subtotal Rp369.000,94.0,2,amount_like
+1,15,Total Kuantitas (Aktif) 1 produk,92.2,5,amount_like
+1,16,Subtotal Pesanan Rp369.000,91.33333333333333,3,amount_like
+1,17,Subtotal Pengiriman Rp30.500,92.0,3,amount_like
+1,18,Biaya Layanan Rp1.900,90.0,3,amount_like
+1,19,Total Diskon Pengiriman -Rp20.000,92.5,4,amount_like
+1,20,Total Proteksi Produk Rp18.000,93.0,4,amount_like
+1,21,Diskon Voucher Toko -Rp10.000,94.0,4,amount_like
+1,22,Diskon Voucher Shopee -Rp53.850,91.5,4,amount_like
+1,23,Total Pembayaran Rp335.550,65.0,3,amount_like
+1,24,Biaya-biaya yang ditagihkan oleh Shopee (jika,92.0,6,short_text
+1,25,ada) sudah termasuk PPN,92.0,4,short_text
+1,26,PT Shopee International Indonesia,94.0,4,short_text
+1,27,Trinity Tower 21st Floor,95.75,4,short_text
+1,28,"Jalan H.R. Rasuna Said Kaveling C22,",93.33333333333333,6,short_text
+1,29,"Blok IIB RT.00O RW.000, Karet Kuningan,",85.5,6,short_text
+1,30,"Setiabudi, Kota Adm. Jakarta Selatan,",94.8,5,short_text
+1,31,DKI Jakarta.,91.5,2,short_text
+1,32,NPWP: 0736666900031000,91.5,2,key_value_line
+1,33,lofl,87.0,1,short_text
+1,34,End of receipt,96.0,3,short_text

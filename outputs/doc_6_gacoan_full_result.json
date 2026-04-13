@@ -1,0 +1,15 @@
+{
+  "document": "doc_6_gacoan.jpeg",
+  "ocr_words": 133,
+  "avg_confidence": 34.72,
+  "document_type": "receipt",
+  "inference_time_s": 115.77,
+  "baseline_merchant": "\\ pay i",
+  "baseline_date": null,
+  "baseline_total": null,
+  "agentic_merchant": "ShopeeFood",
+  "agentic_date": "05/04/2023",
+  "agentic_total": "Rp.500",
+  "expected_type": "PHYSICAL_RECEIPT",
+  "expected_duplicate": false
+}
